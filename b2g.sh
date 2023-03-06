@@ -80,7 +80,7 @@ if [ -d "/system/lib64" ]; then
   LIBDIR="lib64"
 fi;
 
-export LD_LIBRARY_PATH=/vendor/$LIBDIR:/system/$LIBDIR:"$B2G_DIR":/apex/com.android.tethering/$LIBDIR:/apex/com.android.i18n/$LIBDIR:/apex/com.android.runtime/$LIBDIR:/system/apex/com.android.runtime.debug/$LIBDIR
+export LD_LIBRARY_PATH=/vendor/$LIBDIR:/system/$LIBDIR:"$B2G_DIR":/apex/com.android.tethering/$LIBDIR:/apex/com.android.i18n/$LIBDIR:/apex/com.android.runtime/$LIBDIR:/system/apex/com.android.runtime.debug/$LIBDIR:/apex/com.android.vndk.current/$LIBDIR
 export GRE_HOME="$B2G_DIR"
 
 # Run in jar logging mode if needed.
